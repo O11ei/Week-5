@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgb(156, 155, 155);
+            font-weight: bolder;
+            font-size: larger;
+            flex-basis: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            font-weight: bolder;
+            font-size: larger;
+            flex-grow: 1;
+            display: flex;
+        }
+
+        .global {
+            background-color: rgb(233, 226, 217);
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 20px;
+        }
+
+        .box1 {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .box2 {
+            flex-basis: 25%;
+            display: flex;
+            column-gap: 40px;
+        }
+
+        .up_box {
+            background-color: rgb(226, 178, 120);
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 {
+            padding: 25px;
+            background-color: rgb(226, 178, 120);
+            flex-basis: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aside {
+            background-color: rgb(128, 182, 128);
+            padding-top: 10px;
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: rgb(156, 155, 155);
+            font-weight: bolder;
+            font-size: larger;
+            padding: 25px;
+            flex-basis: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box_footer {
+            background-color: white;
+            padding: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>[Шапка страницы]</header>
+        <main>
+            <div class="global">
+                <div class="box1">[Основная часть]</div>
+                <div class="box2">
+                    <div class="up_box">[Еще 1]</div>
+                    <div class="up_box">[Еще 2]</div>
+                </div>
+                <div class="box3">[Еще 3]</div>
+            </div>
+            <aside class="aside">[Боковая часть]</aside>
+        </main>
+        <footer>
+            <div class="box_footer">[Секция футера 1]</div>
+            <div class="box_footer">[Секция футера 2]</div>
+            <div class="box_footer">[Секция футера 3]</div>
+            <div class="box_footer">[Секция футера 4]</div>
+        </footer>
+    </div>
+</body>
+
+</html>
